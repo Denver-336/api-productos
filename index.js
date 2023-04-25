@@ -3,7 +3,7 @@ import express from "express";
 import morgan from "morgan";
 import db from "./db.js";
 import login from "./routes/login.routes.js";
-import usuarios from "./routes/usuarios.routes.js";
+import inicio from "./routes/inicio.routes.js";
 import productos from "./routes/productos.routes.js";
 
 const app = express();
@@ -22,9 +22,9 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 //ENDPOINTS
-// app.use(login);
-// app.use(usuarios);
+app.use(inicio);
 app.use(productos);
+app.use(login);
 
 //SERVER
 app.listen(app.get("port"), () => {
