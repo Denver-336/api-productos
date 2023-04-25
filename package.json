@@ -1,0 +1,24 @@
+{
+  "name": "api_productos",
+  "version": "1.0.0",
+  "description": "Api para consultar listado de productos",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": ["Node.js", "Espress.js"],
+  "author": "https://edu-web-denver-336.vercel.app/",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
